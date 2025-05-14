@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+<body>
+    <h1>Форма заявки на работу в зоопарке</h1>
+    <p><em>Пожалуйста, заполните форму.Обязательные поля помечены *</em></p>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        <fieldset>
+            <legend>
+                Контактная информация
+            </legend>
+            <label>Имя*</label><input type="text" name="name" required><br>
+            <label>Телефон</label><input type="number" name="Number" ><br>
+            <label>Email*</label><input type="email" name="Email" required>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Персональная информация
+            </legend>
+            <label>Возраст*</label><input type="number" name="Age" required><br>
+            <label>Пол</label>
+            <Select>
+                <option>
+                    Женщина
+                </option>
+                <option>
+                    Мужчина
+                </option>
+            </Select><br>
+            <label>Перечислите личные качества</label><br><textarea type="text" name="qualities" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Выберите ваших любимых животных
+            </legend>
+           <table> <tr>
+                <td>
+                    <label>
+                        <input type="checkbox" name="animals[]">Зебра
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="animals[]">Кошак
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="animals[]">Анаконда
+                    </label>
+                </td>
+                <td> 
+                    <label>
+                    <input type="checkbox" name="animals[]">Человек
+                    </label>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox" name="animals[]">Слон
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="animals[]">Антилопа
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="animals[]">Голубь
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="animals[]">Краб
+                    </label>
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+        <input type="submit" value="Отправить запрос">
+    </form>
+</body>
+</html>
