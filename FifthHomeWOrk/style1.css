@@ -1,0 +1,49 @@
+.div1 {
+
+        width: 130px;
+    height: 188px;
+    background-position: 66% 50%;
+    float: left;
+    
+}
+
+.div2 {
+
+    width: 130px;
+    height: 188px;
+    background-position: 99% 75%;
+    float: left;
+    margin-left: -90px;
+    margin-top: 60px;
+}
+
+.div3 {
+
+      width: 130px;
+    height: 188px;
+    background-position: 66% 58.3%;
+    float: left; 
+       margin-left: -90px;
+    margin-top: 120px;  
+}
+.div4 {
+
+      width: 130px;
+    height: 188px;
+    background-position: 33% 91.8%;
+    float: left;   
+           margin-left: -90px;
+    margin-top: 180px;  
+}
+.div5 {
+
+       width: 130px;
+    height: 188px;
+    background-position: 0.1% 100.1%;
+    float: left;   
+         margin-left: -90px;
+    margin-top: 240px;  
+}
+div {
+    background-image: url(cards.7e0a18f0.png);
+}

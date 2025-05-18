@@ -1,0 +1,40 @@
+.div1 {
+
+    width: 140px;
+    height: 200px;
+    background-position: 66% 50%;
+    float: left;
+}
+
+.div2 {
+
+    width: 140px;
+    height: 200px;
+    background-position: 99% 75%;
+    float: left;
+}
+
+.div3 {
+
+    width: 140px;
+    height: 200px;
+    background-position: 66% 58.3%;
+    float: left;   
+}
+.div4 {
+
+    width: 140px;
+    height: 200px;
+    background-position: 33% 91.8%;
+    float: left;   
+}
+.div5 {
+
+    width: 140px;
+    height: 200px;
+    background-position: 0.1% 100.1%;
+    float: left;   
+}
+div {
+    background-image: url(cards.7e0a18f0.png);
+}
