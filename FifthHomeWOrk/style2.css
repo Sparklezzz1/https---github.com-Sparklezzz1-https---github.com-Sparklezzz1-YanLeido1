@@ -1,0 +1,42 @@
+.menu {
+    background-color: gray;
+    float: left;
+    height: 300px;
+    width: 15em;
+}
+
+.content1 {
+    background-color: gainsboro;
+    height: 190px;
+    width: 100%;
+    margin-left: 12.7%;
+}
+
+.content2 {
+    background-color: gainsboro;
+    height: 190px;
+    margin-left: 12.7%;
+
+    margin-top: .2em;
+    width: 100%;
+}
+
+.footer {
+    background-color:beige;
+    clear: both;
+    height: auto;
+    width: 100%;
+    margin-top: .2em;
+}
+
+.boss {
+    background-color: lightsteelblue;
+    overflow: hidden;
+}
+
+.clear {
+    background-color: black;
+    height: 0.1px;
+    clear: both;
+
+}
