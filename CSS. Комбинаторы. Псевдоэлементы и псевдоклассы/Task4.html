@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[href$='.doc']::before {
+            content: url(1.png);
+        }
+
+        a[href$='.docx']::after {
+            content: url(2.jfif);
+        }
+
+        a[href$='.docs']::after {
+            content: url(4.png);
+        }
+        a[href$='.txt']::after {
+            content: url(5.gif);
+        }
+
+        .divs {
+            border: solid;
+            border-width: 0.4px;
+            padding-bottom: 10px;
+            width: 600px;
+            height: 100%;
+            border-color: lightgray;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        a.Word::after {
+            content: url(2.jfif);
+            display: none;
+
+        }
+
+        a.PDF::after {
+            content: url(4.png);
+            display: none;
+        }
+
+        a.ZIP::after {
+            content: url(5.gif);
+            display: none;
+        }
+
+        a.Word:hover::after {
+            content: url(2.jfif);
+            display: inline-block;
+
+        }
+
+        a.PDF:hover::after {
+            content: url(4.png);
+            display: inline-block;
+        }
+
+        a.ZIP:hover::after {
+            content: url(5.gif);
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Форматы файлов.</h1>
+    <div class="divs">
+        .DOC или .doc (от англ. <a href="#.doc">document</a>) - расширение имени файла, исползуемое для
+        файлов,
+        представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для
+        обозначения простых текстовых файлов без формирования, однако позже стало
+        использоваться для двоичных форматов с разметкой.<br><br>
+
+        <a href="#.docx">Документ MS Word</a>
+    </div>
+    <div class="divs">
+        Portable Document Format(<a href="#.doc">PDF</a>) - межплатформенный формат электронных документов,
+        разработанный фирмой Adobe Systems с использованием ряда возможностей языка
+        Postscript.<br><br>
+
+        <a href="#.docs">Документ PDF</a>
+    </div>
+    <div class="divs">
+        ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате
+        обычно имеет расширение <a href="#.doc">.zip </a> и хранит в сжатом или несжатом виде один или
+        несколько
+        файлов, которое можно из него извлечь путем распаковки с помощью специальной
+        программы.<br><br>
+        <a href="#.txt">Архив</a>
+    </div>
+    <h1>Это список файлов</h1>
+    <ul>
+        <li>
+            <a class="Word" href="#">Документы MS Word</a>
+
+        </li>
+        <li>
+            <a class="PDF" href="#">Документы PDF</a>
+
+        </li>
+        <li>
+            <a class="ZIP" href="#">Архив</a>
+
+        </li>
+    </ul>
+</body>
+
+</html>
