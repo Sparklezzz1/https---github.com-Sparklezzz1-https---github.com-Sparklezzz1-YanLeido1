@@ -8,7 +8,7 @@
 .content1 {
     background-color: gainsboro;
     height: 190px;
-    width: 100%;
+    width: auto;
     margin-left: 12.7%;
 }
 
@@ -18,7 +18,7 @@
     margin-left: 12.7%;
 
     margin-top: .2em;
-    width: 100%;
+    width: auto;
 }
 
 .footer {
@@ -35,8 +35,15 @@
 }
 
 .clear {
-    background-color: black;
+    background-color: gainsboro;
     height: 0.1px;
     clear: both;
 
+}
+.mail{
+    width:80px;
+    height: 80px;
+   float: right;
+    clear: both;
+    
 }
