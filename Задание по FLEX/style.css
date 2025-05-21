@@ -1,0 +1,45 @@
+.menu {
+    background-color: gray;
+    overflow: hidden;
+    height: 200px;
+    width: 15em;
+}
+
+.content1 {
+    background-color: gainsboro;
+    height: 190px;
+    width: 1650px;
+}
+
+.content2 {
+    background-color: gainsboro;
+    height: 190px;
+    width:1650px;
+}
+
+.footer {
+    background-color:beige;
+    clear: both;
+    height: auto;
+    width: 100%;
+    margin-top: .2em;
+}
+
+.boss {
+     display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content:flex-start;
+  background-color:cornsilk;
+
+}
+.content3{
+    background-color: gray;
+    overflow: hidden;
+    height: 100px;
+    width: 240px;
+}
+
+
+
