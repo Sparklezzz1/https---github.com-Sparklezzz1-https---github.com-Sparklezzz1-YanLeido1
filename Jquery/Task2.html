@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pass1{
+            background-color:#008000;
+        }
+        #pass2{
+            background-color:#008000;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    Проверка пароля
+</h1>
+<form>
+    <fieldset>
+           <label><input id="pass1" type="text" name="pass" required>* Пароль</label><br>
+              <label><input id="pass2"  type="text" name="pass" required>* Повторите пароль</label><br>
+            <input value="Отправить" type="submit">
+    </fieldset>
+</form>
+
+
+       <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function($){
+                $('#pass2').change(function() {
+            var pass1 = $("#pass1").val();
+            var pass2 = $("#pass2").val();
+                    
+            if (pass1 != pass2) {
+                $("#pass2").css('background', '#FF0000');
+                $("#pass1").css('background', '#FF0000');
+            }
+            else{
+                $("#pass2").css('background', '#008000');
+                $("#pass1").css('background', '#008000');
+            }
+        });
+
+    });
+  </script>
+</body>
+</html>
